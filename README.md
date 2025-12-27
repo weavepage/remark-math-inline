@@ -87,6 +87,15 @@ This monorepo contains:
 
 For direct micromark or mdast integration, see the individual package READMEs.
 
+## Adjacency
+
+`:math[...]` cannot be preceded by a word character. Use parentheses for adjacency:
+
+```markdown
+mass(:math[m])     <!-- Works -->
+mass:math[m]       <!-- Does NOT parse -->
+```
+
 ## With remark-directive
 
 If using both plugins, **the one registered last wins** for `:math[...]` syntax:

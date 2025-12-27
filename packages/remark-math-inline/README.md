@@ -82,6 +82,15 @@ interface InlineMath {
 }
 ```
 
+## Adjacency
+
+`:math[...]` must not be preceded by a word character. For adjacency without spaces, use parentheses:
+
+```markdown
+mass(:math[m])     <!-- Works -->
+mass:math[m]       <!-- Does NOT parse -->
+```
+
 ## Use with remark-directive
 
 If you use both `remark-math-inline` and `remark-directive`, **the plugin registered last takes precedence** for `:math[...]` syntax.
