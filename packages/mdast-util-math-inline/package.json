@@ -1,6 +1,6 @@
 {
   "name": "mdast-util-math-inline",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "mdast utility to parse and serialize inline math (:math[...])",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "mdast-util-from-markdown": "^2.0.0",
     "mdast-util-to-markdown": "^2.0.0",
-    "micromark-extension-math-inline": "^0.1.0"
+    "micromark-extension-math-inline": "^1.0.0"
   },
   "devDependencies": {
     "@types/mdast": "^4.0.0",

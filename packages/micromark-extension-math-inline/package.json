@@ -1,6 +1,6 @@
 {
   "name": "micromark-extension-math-inline",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Micromark extension for inline math syntax (:math[...])",
   "type": "module",
   "main": "./dist/index.js",

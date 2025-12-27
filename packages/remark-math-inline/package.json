@@ -1,6 +1,6 @@
 {
   "name": "remark-math-inline",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Remark plugin for inline math syntax (:math[...])",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,8 +21,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "mdast-util-math-inline": "^0.1.0",
-    "micromark-extension-math-inline": "^0.1.0"
+    "mdast-util-math-inline": "^1.0.0",
+    "micromark-extension-math-inline": "^1.0.0"
   },
   "peerDependencies": {
     "unified": ">=11"
