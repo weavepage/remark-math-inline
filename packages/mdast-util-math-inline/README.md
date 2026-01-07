@@ -49,8 +49,9 @@ The `data` fields enable compatibility with `remark-rehype` and `rehype-katex`.
 ## Escaping
 
 When serializing to markdown:
-- `]` is escaped as `\]`
-- `\` before `]` or `\` is escaped as `\\`
+- Unbalanced `]` is escaped as `\]`
+- Unbalanced `[` is escaped as `\[`
+- `\` before `[`, `]`, or `\` is escaped as `\\`
 - Balanced brackets don't need escaping
 
 ## License

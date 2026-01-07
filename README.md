@@ -48,9 +48,13 @@ Nested brackets work: :math[f(x) = [a, b]]
 
 ### Escaping
 
+Only brackets and backslashes can be escaped — all other backslashes pass through unchanged for LaTeX compatibility:
+
+- `\[` → literal `[` (does not increment bracket depth)
 - `\]` → literal `]` (does not close)
 - `\\` → literal `\`
-- Other backslashes are preserved: `\alpha` stays as `\alpha`
+
+Example: `\alpha` stays as `\alpha`, `\frac{1}{2}` stays as `\frac{1}{2}`
 
 ### Boundary Rules
 

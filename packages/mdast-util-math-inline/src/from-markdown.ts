@@ -57,5 +57,5 @@ export function mathInlineFromMarkdown(): Extension {
 }
 
 function processEscapes(input: string): string {
-  return input.replace(/\\([\]\\])/g, '$1')
+  return input.replace(/\\([\[\]\\])/g, '$1')
 }

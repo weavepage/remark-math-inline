@@ -72,6 +72,15 @@ describe('remark-math-inline', () => {
       }
     })
 
+    it('handles escaped open bracket', () => {
+      const tree = parse(':math[a\\[b]')
+      const paragraph = tree.children[0]
+      if (paragraph.type === 'paragraph') {
+        const math = paragraph.children[0] as InlineMath
+        expect(math.value).toBe('a[b')
+      }
+    })
+
     it('preserves LaTeX commands', () => {
       const tree = parse(':math[\\alpha + \\beta]')
       const paragraph = tree.children[0]
